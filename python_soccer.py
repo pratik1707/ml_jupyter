@@ -64,16 +64,12 @@ df1['difference'] = df1['Value'] - df1['Wage']
 df1.sort_values('difference', ascending=False)
 
 
-# In[69]:
-
 
 import seaborn as sns
 sns.set()
 graph = sns.scatterplot(x = 'Wage', y = 'Value', data = df1)
 graph 
 
-
-# In[79]:
 
 
 from bokeh.plotting import figure, show 
@@ -91,19 +87,6 @@ p.circle('Wage', 'Value', size = 10, source = df1)
 show(p)
 
 
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
 
 
 
